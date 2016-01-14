@@ -15,3 +15,15 @@ grocery_list << "rice"
 print_list(grocery_list)
 # Count the list.
 puts "There are #{grocery_list.count} on the list"
+
+# Method to check for an item within the list.
+
+def check_list(list, item)
+  if list.include?(item)
+    puts "You need to pick up #{item}"
+  else
+    puts "You don't need to pick up #{item}"
+  end
+end
+
+check_list(grocery_list, "bananas")
