@@ -1,7 +1,8 @@
-puts "What's your temperature in Fahrenheit"
-  fahrenheit = gets.chomp.to_i
-def temp_conversion(fahrenheit)
-  result = (fahrenheit - 32) * 5 / 9
+def temp_conversion(f)
+  return (f.to_i - 32) * 5 / 9
 end
-temp_conversion(fahrenheit)
-puts "Your temperature is #{temp_conversion(fahrenheit)}"
+
+puts "What's the temperature in Fahrenheit?"
+f_temp = gets.chomp
+
+puts "#{f_temp} degrees Fahrenheit is #{temp_conversion(f_temp)} degrees Celsius"
