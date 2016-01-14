@@ -28,4 +28,8 @@ end
 
 check_list(grocery_list, "bananas")
 
+# Find 2nd item in the list.
 puts "The 2nd item is #{grocery_list[1]}"
+#alphabetically sorted
+puts "The list alphabetically sorted"
+print_list(grocery_list.sort)
