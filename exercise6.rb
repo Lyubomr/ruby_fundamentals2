@@ -8,7 +8,7 @@
 end
 
 # Print out grocery list
-grocery_list = ["bananas", "eggs", "milk"]
+grocery_list = ["carrots", "toilet paper", "apples", "milk", "salmon"]
   print_list(grocery_list)
 # Added rice to list and printed list again.
 grocery_list << "rice"
@@ -33,3 +33,5 @@ puts "The 2nd item is #{grocery_list[1]}"
 #alphabetically sorted
 puts "The list alphabetically sorted"
 print_list(grocery_list.sort)
+# Remove salmon
+print_list(grocery_list.sort. - ["salmon"])
