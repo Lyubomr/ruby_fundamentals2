@@ -27,3 +27,5 @@ def check_list(list, item)
 end
 
 check_list(grocery_list, "bananas")
+
+puts "The 2nd item is #{grocery_list[1]}"
