@@ -34,9 +34,20 @@ def size_change(hash_to_be_changed, size_input)
   end
 end
 
+#Changed student size
 size_change(students, 1.05)
 display_hash(students)
 
+# Delete 2nd cohort
 students.delete(:cohort2)
-
 display_hash(students)
+
+def total_students(hash)
+  cohort_total = 0
+  hash.each do | cohort_num, student_count |
+    cohort_total += student_count.to_i
+  end
+  puts " There's #{cohort_total} total students"
+end
+
+total_students(students)
